@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-size: 14px;
+  color: #333; }
+
+.clearfix {
+  clear: both; }
+
+.center-outer {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .center-outer header {
+    display: block;
+    padding: 5px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .center-outer header {
+        padding: 10px 20px; } }
+    @media (max-width: 767px) {
+      .center-outer header .nav {
+        background-color: black;
+        width: 170px;
+        z-index: 2;
+        position: fixed;
+        right: -1000px;
+        background: #000;
+        color: #000;
+        height: 100%; } }
+    .center-outer header ul {
+      margin: 0;
+      padding: 0; }
+      .center-outer header ul li {
+        list-style: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: 'Arial';
+        padding: 5px 5px;
+        text-transform: capitalize;
+        border-bottom: 1px solid transparent; }
+        @media (max-width: 767px) {
+          .center-outer header ul li {
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid #cacaca;
+            padding: 8px 15px; } }
+        .center-outer header ul li a {
+          display: inline-block;
+          color: #000;
+          text-decoration: none; }
+          @media (max-width: 767px) {
+            .center-outer header ul li a {
+              color: #fff;
+              display: block; } }
+    .center-outer header .menu-left {
+      display: inline-block;
+      text-align: right;
+      width: 45%;
+      float: left; }
+    .center-outer header .logo-center {
+      width: 10%;
+      display: inline-block;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .center-outer header .logo-center {
+          display: none; } }
+      .center-outer header .logo-center img {
+        display: inline-block; }
+    .center-outer header .mob-logo {
+      display: none;
+      float: left; }
+      @media (max-width: 767px) {
+        .center-outer header .mob-logo {
+          display: block; } }
+    .center-outer header .toggleNav {
+      display: none;
+      float: right; }
+      @media (max-width: 767px) {
+        .center-outer header .toggleNav {
+          display: block; } }
+    .center-outer header .menu-right {
+      display: inline-block;
+      text-align: left;
+      width: 45%;
+      float: right; }
+    @media (max-width: 767px) {
+      .center-outer header .menu-left, .center-outer header .menu-right {
+        float: none;
+        display: block;
+        width: 100%; } }

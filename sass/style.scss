@@ -1,0 +1,117 @@
+*{
+    margin:0px; padding: 0px;
+}
+body{
+    font-size: 14px;
+    color: #333;
+}
+.clearfix{
+    clear: both;
+}
+.center-outer{
+    width:100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+    header{
+        display: block;
+        padding: 5px;
+        position: relative;
+        @media (max-width:767px){
+            padding: 10px 20px;
+        }
+        .nav{
+            @media (max-width:767px){
+                background-color: rgba(0,0,0,1);
+                width:170px;
+                z-index:2;
+                position:fixed;
+                right:-1000px;
+                background:#000;
+                color:#000;
+                height: 100%;
+
+
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                font-size: 16px;
+                font-family: 'Arial';
+                padding: 5px 5px;
+                text-transform: capitalize;
+                border-bottom: 1px solid transparent;
+                @media (max-width:767px){
+                    display: block;
+                    text-align: left;
+                    border-bottom: 1px solid #cacaca;
+                    padding:8px 15px;
+                }
+                
+                a{
+                    display: inline-block;
+                    color: #000;
+                    text-decoration: none; 
+                    @media (max-width:767px){
+                        color: #fff;
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+        .menu-left{
+            display: inline-block;
+            text-align: right;
+            width: 45%;
+            float: left;
+        }
+        
+        .logo-center{
+            width: 10%;
+            display: inline-block;
+            text-align: center;
+            @media (max-width:767px){
+                display: none;
+            }
+            img{
+                display: inline-block;
+            }
+        }
+        .mob-logo{
+            display: none;
+            float: left;
+            @media (max-width:767px){
+                display: block;
+            }
+        }
+        .toggleNav{
+            display: none;
+            float: right;
+            @media (max-width:767px){
+                display: block;
+                
+            }
+        }
+        .menu-right{
+            display: inline-block;
+            text-align: left;
+            width: 45%; 
+            float: right;
+        }
+        .menu-left,.menu-right{
+            @media (max-width:767px){   
+                float: none;
+                display: block;
+                width: 100%;    
+            }
+        }
+    }
+        
+}
+
